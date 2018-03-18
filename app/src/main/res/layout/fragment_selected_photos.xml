@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pomis.app.dressup.fragments.SelectedPhotosFragment">
+
+    <com.mindorks.placeholderview.PlaceHolderView
+        android:id="@+id/phv_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_wear_types"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_wear_types"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_height="wrap_content"
+            android:text="What do you need?"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/camel"
+            android:textSize="32dp" />
+        
+        <ImageView
+            android:id="@+id/iv_top"
+            android:src="@drawable/top"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="196dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+        <ImageView
+            android:id="@+id/iv_shoe"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="32dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/shoe"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="196dp"
+
+            android:src="@drawable/bottom"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_next"
+
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:layout_below="@id/phv_photos"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="32dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrows" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_arrow"
+            android:text="Tap here to continue"
+            android:textColor="@color/camel"
+            android:textSize="32dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_magic"
+        android:clickable="true"
+
+        android:visibility="gone"
+        android:alpha="0"
+        android:layout_height="match_parent"
+        android:layout_below="@id/phv_photos"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_wand"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="32dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wand" />
+
+        <TextView
+            android:id="@+id/tv_magic"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_wand"
+            android:text="Tap here to do magic"
+            android:textColor="@color/camel"
+            android:textSize="32dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

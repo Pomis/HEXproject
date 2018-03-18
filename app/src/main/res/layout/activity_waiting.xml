@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pomis.app.dressup.activities.WaitingActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="-32dp" />
+
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignTop="@id/iv_wand"
+
+        android:layout_marginLeft="-100dp"
+
+        android:layout_marginTop="-60dp"
+        android:layout_toRightOf="@id/iv_wand"
+        app:SpinKit_Color="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/iv_wand"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="32dp"
+        android:src="@drawable/wand_magicless" />
+
+</RelativeLayout>
